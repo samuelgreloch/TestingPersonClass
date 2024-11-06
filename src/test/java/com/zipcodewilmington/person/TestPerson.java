@@ -10,11 +10,11 @@ public class TestPerson {
     @Test
     public void testDefaultConstructor() {
         // Given
-        String expectedName = "";
+        String expectedName = "Sam";
         Integer expectedAge = Integer.MAX_VALUE;
 
         // When
-        Person person = new Person();
+        Person person = new Person(expectedName, expectedAge);
 
         // Then
         String actualName = person.getName();
@@ -72,7 +72,7 @@ public class TestPerson {
     public void testSetName() {
         // Given
         Person person = new Person();
-        String expected = "Leon";
+        String expected = "Sam";
 
         // When
         person.setName(expected);
@@ -94,5 +94,14 @@ public class TestPerson {
         // Then
         Integer actual = person.getAge();
         Assert.assertEquals(expected, actual);
+    }
+    @Test
+
+    public void testNewTest() {
+
+
+
+
+
     }
 }
